@@ -97,8 +97,18 @@
 
         <h2>Permisos del dispositivo</h2>
         <ul>
+            <li><strong>Conectividad (android.permission.INTERNET y android.permission.ACCESS_NETWORK_STATE):</strong> se utilizan para sincronizar tus datos cuando activás la nube y para verificar la disponibilidad de conexión antes de hacerlo.</li>
+            <li><strong>Licencia y servicios de Google (com.android.vending.CHECK_LICENSE y com.google.android.providers.gsf.permission.READ_GSERVICES):</strong> permiten validar tu suscripción y comunicar la app con los servicios de Google que elegís usar para respaldos y sincronización.</li>
             <li><strong>Contactos (android.permission.READ_CONTACTS):</strong> se solicita de forma opcional para completar fichas de clientes con datos de tu agenda. Podés negarlo y seguir usando la app.</li>
-            <li><strong>Archivos y cámara:</strong> se usan para guardar fotos en tu dispositivo o adjuntar imágenes a tus registros, siempre a pedido tuyo.</li>
+            <li><strong>Archivos y biblioteca multimedia (android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE y android.permission.WRITE_EXTERNAL_STORAGE &ndash; solo en Android 12 o anteriores):</strong> se usan cuando decidís adjuntar fotos, documentos o generar respaldos locales de tu taller.</li>
+            <li><strong>Grabación de audio (android.permission.RECORD_AUDIO):</strong> habilita la carga de notas de voz opcionales que añadís a tus pedidos o registros.</li>
+            <li><strong>Notificaciones (android.permission.POST_NOTIFICATIONS):</strong> se usa para mostrar recordatorios de tareas, pedidos y sincronización. Es opcional y podés desactivarlo en cualquier momento.</li>
+            <li><strong>Servicios en primer plano (android.permission.FOREGROUND_SERVICE y android.permission.FOREGROUND_SERVICE_DATA_SYNC):</strong> permiten mantener la sincronización y los recordatorios activos aun cuando la app no está abierta, siempre dentro de las funciones del taller.</li>
+            <li><strong>Alarmas exactas (android.permission.SCHEDULE_EXACT_ALARM):</strong> habilita recordatorios puntuales para tareas programadas del taller, incluso después de reiniciar el dispositivo.</li>
+            <li><strong>Inicio automático (android.permission.RECEIVE_BOOT_COMPLETED):</strong> se emplea para reprogramar recordatorios y sincronizaciones una vez que encendés el dispositivo.</li>
+            <li><strong>Reordenar tareas (android.permission.REORDER_TASKS):</strong> nos permite llevarte de vuelta a la pantalla principal cuando abrís la app desde una notificación.</li>
+            <li><strong>Evitar que el dispositivo se duerma (android.permission.WAKE_LOCK):</strong> se usa de forma limitada para terminar copias de seguridad o sincronizaciones sin interrupciones.</li>
+            <li><strong>Protección de receptores dinámicos (com.natirey.ceramistic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION):</strong> es un permiso interno para que otras aplicaciones no puedan disparar funciones reservadas de Ceramistic.</li>
         </ul>
 
         <h2>Conservación y control</h2>
