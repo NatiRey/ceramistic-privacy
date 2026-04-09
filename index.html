@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Política de privacidad - Ceramistic</title>
+    <title>Política de privacidad - Atelier Matic</title>
     <style>
         :root {
             color-scheme: light dark;
@@ -68,62 +68,67 @@
 <body>
     <main class="page">
         <h1>Política de privacidad</h1>
-        <p class="last-updated">Última actualización: octubre 2025</p>
-        <p>Ceramistic respeta tu privacidad. Esta política explica qué información recopilamos, cómo la usamos y las opciones que tenés para controlarla.</p>
+        <p class="last-updated">Última actualización: abril 2026</p>
+        <p>Atelier Matic respeta tu privacidad. Esta política explica qué información se registra en la app, cómo se gestiona dentro de tu dispositivo y qué opciones tenés para controlarla. Por defecto, la información se mantiene localmente y solo se sincroniza cuando vos lo activás.</p>
 
-        <h2>Datos que recopilamos</h2>
+        <h2>Datos que registrás en la app</h2>
         <ul>
-            <li><strong>Contactos:</strong> solo accedemos a nombres, teléfonos y correos cuando decidís importar información desde tu agenda para completar un cliente.</li>
+            <li><strong>Contactos:</strong> podés importar o guardar contactos usando el selector del sistema, sin acceso masivo a toda tu agenda.</li>
             <li><strong>Datos manuales:</strong> incluye pedidos, clientes, piezas, materiales, jornadas y tareas del taller que cargás en la app.</li>
             <li><strong>Archivos adjuntos:</strong> fotos, documentos o notas que agregás a piezas, stock, pedidos o registros similares.</li>
-            <li><strong>Copias de seguridad:</strong> datos sincronizados cuando activás la licencia en la nube o exportás un respaldo manualmente.</li>
+            <li><strong>Copias de seguridad:</strong> datos respaldados o sincronizados solo cuando activás esas funciones de forma explícita.</li>
         </ul>
 
-        <h2>Cómo usamos la información</h2>
+        <h2>Cómo se gestiona la información en la app</h2>
         <ul>
-            <li>Para mostrar y organizar clientes, pedidos, inventario, procesos y recordatorios dentro de la app.</li>
-            <li>Para sincronizar tus datos entre dispositivos cuando habilitás la nube con tu propia cuenta de Google.</li>
-            <li>Para responder consultas o brindarte soporte si nos escribís a nuestros canales de contacto.</li>
+            <li>La app organiza clientes, pedidos, inventario, procesos y recordatorios para que puedas operar el taller.</li>
+            <li>Solo si activás la sincronización, tus datos se copian cifrados entre tus dispositivos con tu propia cuenta de Google.</li>
+            <li>Si nos escribís por soporte, usamos tu mensaje únicamente para responder tu consulta.</li>
         </ul>
 
         <h2>Dónde se almacenan los datos</h2>
         <ul>
-            <li>Guardamos la base de datos principal de forma local en tu dispositivo.</li>
+            <li>La base de datos principal se guarda de forma local en tu dispositivo.</li>
             <li>Si activás la sincronización, se crea una copia cifrada en los servicios de Google asociados a tu cuenta y en los respaldos que generes.</li>
         </ul>
 
         <h2>Cómo compartimos la información</h2>
-        <p>No vendemos ni compartimos tus datos con terceros. Solo se transfieren cuando solicitás sincronizarlos con tu cuenta de Google o exportás una copia de seguridad.</p>
+        <p>No vendemos ni compartimos tus datos con terceros para publicidad. Solo se transfieren cuando solicitás sincronizarlos con tu cuenta de Google o exportás una copia de seguridad.</p>
+
+        <h2>Qué no hacemos con tus datos</h2>
+        <ul>
+            <li>No vendemos datos personales.</li>
+            <li>No usamos tu información para perfilado publicitario dentro de la app.</li>
+            <li>No guardamos archivos de audio propios al usar funciones de voz.</li>
+        </ul>
 
         <h2>Permisos del dispositivo</h2>
         <ul>
-            <li><strong>Conectividad (android.permission.INTERNET y android.permission.ACCESS_NETWORK_STATE):</strong> se utilizan para sincronizar tus datos cuando activás la nube y para verificar la disponibilidad de conexión antes de hacerlo.</li>
-            <li><strong>Licencia y servicios de Google (com.android.vending.CHECK_LICENSE y com.google.android.providers.gsf.permission.READ_GSERVICES):</strong> permiten validar tu suscripción y comunicar la app con los servicios de Google que elegís usar para respaldos y sincronización.</li>
-            <li><strong>Contactos (android.permission.READ_CONTACTS):</strong> se solicita de forma opcional para completar fichas de clientes con datos de tu agenda. Podés negarlo y seguir usando la app.</li>
-            <li><strong>Archivos y biblioteca multimedia (android.permission.READ_MEDIA_IMAGES, android.permission.READ_EXTERNAL_STORAGE y android.permission.WRITE_EXTERNAL_STORAGE &ndash; solo en Android 12 o anteriores):</strong> se usan cuando decidís adjuntar fotos, documentos o generar respaldos locales de tu taller.</li>
-            <li><strong>Grabación de audio (android.permission.RECORD_AUDIO):</strong> habilita la carga de notas de voz opcionales que añadís a tus pedidos o registros.</li>
-            <li><strong>Notificaciones (android.permission.POST_NOTIFICATIONS):</strong> se usa para mostrar recordatorios de tareas, pedidos y sincronización. Es opcional y podés desactivarlo en cualquier momento.</li>
-            <li><strong>Servicios en primer plano (android.permission.FOREGROUND_SERVICE y android.permission.FOREGROUND_SERVICE_DATA_SYNC):</strong> permiten mantener la sincronización y los recordatorios activos aun cuando la app no está abierta, siempre dentro de las funciones del taller.</li>
-            <li><strong>Alarmas exactas (android.permission.SCHEDULE_EXACT_ALARM):</strong> habilita recordatorios puntuales para tareas programadas del taller, incluso después de reiniciar el dispositivo.</li>
-            <li><strong>Inicio automático (android.permission.RECEIVE_BOOT_COMPLETED):</strong> se emplea para reprogramar recordatorios y sincronizaciones una vez que encendés el dispositivo.</li>
-            <li><strong>Reordenar tareas (android.permission.REORDER_TASKS):</strong> nos permite llevarte de vuelta a la pantalla principal cuando abrís la app desde una notificación.</li>
-            <li><strong>Evitar que el dispositivo se duerma (android.permission.WAKE_LOCK):</strong> se usa de forma limitada para terminar copias de seguridad o sincronizaciones sin interrupciones.</li>
-            <li><strong>Protección de receptores dinámicos (com.natirey.ceramistic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION):</strong> es un permiso interno para que otras aplicaciones no puedan disparar funciones reservadas de Ceramistic.</li>
+            <li><strong>Integración de contactos del sistema:</strong> podés importar o guardar contactos usando el selector del dispositivo, sin dar acceso masivo a toda tu agenda.</li>
+            <li><strong>Micrófono (android.permission.RECORD_AUDIO):</strong> se usa solo cuando tocás funciones de dictado o comandos por voz. Atelier Matic no guarda archivos de audio propios; usa el reconocedor del sistema para convertir voz en texto/comandos. Si no otorgás este permiso, podés seguir usando la app con ingreso manual.</li>
+            <li><strong>Notificaciones (android.permission.POST_NOTIFICATIONS):</strong> se usa para mostrar recordatorios y alertas operativas. Es opcional y podés desactivarlo en cualquier momento.</li>
+            <li><strong>Servicios en primer plano (android.permission.FOREGROUND_SERVICE y android.permission.FOREGROUND_SERVICE_DATA_SYNC):</strong> permiten mantener activos procesos críticos de cronómetros/sincronización mientras la app no está en primer plano.</li>
+            <li><strong>Alarmas exactas (android.permission.SCHEDULE_EXACT_ALARM):</strong> habilita recordatorios puntuales para tareas programadas del taller.</li>
+            <li><strong>Archivos y multimedia (android.permission.WRITE_EXTERNAL_STORAGE, solo Android 12 o anteriores):</strong> se usa para guardado/exportación local en dispositivos legacy cuando corresponde.</li>
         </ul>
 
         <h2>Conservación y control</h2>
         <ul>
             <li>Podés editar o eliminar cualquier registro desde la app, revocar permisos del sistema y desactivar la sincronización cuando quieras.</li>
-            <li>Si desinstalás Ceramistic se elimina la base de datos local. Las copias externas generadas por vos permanecen hasta que las borres.</li>
+            <li>Si desinstalás Atelier Matic se elimina la base de datos local. Las copias externas generadas por vos permanecen hasta que las borres.</li>
+            <li>Los registros de diagnóstico (por ejemplo, reportes de errores) se mantienen en tu dispositivo hasta que decidas compartirlos con soporte.</li>
         </ul>
 
         <h2>Seguridad</h2>
-        <p>Limitamos el acceso a los datos a las funciones necesarias de la app y utilizamos los servicios de Google solo cuando los activás. Recomendamos proteger tu dispositivo con código o biometría.</p>
+        <p>El acceso a los datos queda limitado a las funciones necesarias de la app. Los servicios de Google solo intervienen cuando activás sincronización o respaldo. Recomendamos proteger tu dispositivo con código o biometría.</p>
+
+        <h2>Menores de edad</h2>
+        <p>Atelier Matic no está dirigida principalmente a menores de 13 años. Si detectás datos personales de un menor sin consentimiento de su responsable legal, contactanos para eliminarlos.</p>
 
         <h2>Tus derechos</h2>
         <ul>
-            <li>Podés retirar los permisos otorgados desde Ajustes &gt; Aplicaciones &gt; Ceramistic y controlar qué información se sincroniza o respalda.</li>
-            <li>Si tenés dudas o querés ejercer tus derechos, escribinos a <a href="mailto:support@example.com">support@example.com</a>.</li>
+            <li>Podés retirar los permisos otorgados desde Ajustes &gt; Aplicaciones &gt; Atelier Matic y controlar qué información se sincroniza o respalda.</li>
+            <li>Si tenés dudas o querés ejercer tus derechos, escribinos al correo de soporte publicado en Play Store para Atelier Matic.</li>
         </ul>
 
         <h2>Cambios a esta política</h2>
@@ -131,4 +136,3 @@
     </main>
 </body>
 </html>
-
